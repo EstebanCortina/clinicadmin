@@ -41,6 +41,7 @@ Copia el archivo de ejemplo y modifícalo:
 
 ```bash
 cp .env.example .env
+cp .env.front.example .env.front
 ```
 
 > **Nota:** Base de datos y API REST comparten algunas variables.
@@ -56,7 +57,7 @@ Asegúrate de que el archivo `init.sql` tenga los comandos SQL necesarios para i
 ### 4. Levanta todos los servicios
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 Esto construirá y levantará los servicios de:
